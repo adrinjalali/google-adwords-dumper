@@ -36,9 +36,13 @@ Recommended environment is a python virtual environment:
 
 # Execution
 you can run the program through `main.py` script. Arguments include:
+
 `--start-date`: the start date of performance reports to be fetched.
+
 `--end-date`: the end date of performance reports to be fetched.
+
 `--create-tables`: this will create all destination tables in the database if they don't already exist.
+
 `-v[vvvvv]`: verbosity level. `-vvvvv` is DEBUG level. `-vvvv` is recommended.
 
 If `start-date` and `end-date` arguments are not given to the program, the program looks at the largest date for each performance report, and it downloads the data from the day after that largest date until yesterday. If the number of returned records by google differ from the number of records for the largest date in the database, the program deletes those records and tries fetching the data from google starting that date. The program does not try to check completeness of the data for dates before that date.
