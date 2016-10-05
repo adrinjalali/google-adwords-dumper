@@ -23,7 +23,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-# Prerequisite
+## Prerequisite
 This program is written and tested under python3.4+, Debian and ArchLinux.
 
 Dependencies include: `sqlalchemy`, `googleads`, `pyodbc`
@@ -36,7 +36,7 @@ Recommended environment is a python virtual environment:
 
 `pip install sqlalchemy googleads pyodbc`
 
-# Execution
+## Execution
 you can run the program through `main.py` script. Arguments include:
 
 `--start-date`: the start date of performance reports to be fetched.
