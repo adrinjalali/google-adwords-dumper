@@ -36,7 +36,7 @@ Recommended environment is a python virtual environment:
 
 You need to set two set configuration in two configuration files before 
 running the program. You should store required parameters to connect to google
-adwords in `googleads.yaml` in you home directory. An example of the file is provided
+adwords in [`googleads.yaml`](https://github.com/adrinjalali/google-adwords-dumper/blob/master/googleads.yaml) in you home directory. An example of the file is provided
 in this repository. You can follow the tutorial available [here](https://developers.google.com/adwords/api/docs/guides/first-api-call) to acquire those required values.
 
 You also need to have `connectionstrings.cfg` in your home folder with the following lines in it. The program assumes the server is a MSSQL server for now.
