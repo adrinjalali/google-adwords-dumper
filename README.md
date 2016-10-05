@@ -30,11 +30,20 @@ Dependencies include: `sqlalchemy`, `googleads`, `pyodbc`
 
 Recommended environment is a python virtual environment:
 
-`virtualenv --python python3 venv`
+    virtualenv --python python3 venv
+    source venv/bin/activate
+    pip install sqlalchemy googleads pyodbc
 
-`source venv/bin/activate`
+You need to set two set configuration in two configuration files before 
+running the program. You should store required parameters to connect to google
+adwords in `googleads.yaml` in you home directory. An example of the file is provided
+in this repository. You can follow the tutorial available [here](https://developers.google.com/adwords/api/docs/guides/first-api-call) to acquire those required values.
 
-`pip install sqlalchemy googleads pyodbc`
+You also need to have `connectionstrings.cfg` in your home folder with the following lines in it. The program assumes the server is a MSSQL server for now.
+
+
+    [adwords]
+    connection-string =mssql+pyodbc://username:password@mssqlserver.fqdn.address:1433/databasename?driver=FreeTDS;tds_version=7.2
 
 ## Execution
 you can run the program through `main.py` script. Arguments include:
