@@ -4,7 +4,9 @@ google-adwords-dumper is a program to fetch basic data of an adwords
 account and some relevant performance reports of the account. It also
 fetches the data of child accounts if the given account is a master
 account.
+
 Copyright (C) 2016 Adrin Jalali
+
 This program was developed originally at [Mister Spex GmbH](https://corporate.misterspex.com/en/)
 and then released under GPLv3+ with their permission.
 
