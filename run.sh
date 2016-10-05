@@ -1,6 +1,29 @@
+"""
+    This file is a part of google-adwords-dumper.
+
+    google-adwords-dumper is a program to fetch basic data of an adwords
+    account and some relevant performance reports of the account. It also
+    fetches the data of child accounts if the given account is a master
+    account.
+    Copyright (C) 2016 Adrin Jalali
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+"""
+
+
 #!/bin/bash
 
-cd ~/Projects/googleads
+cd ~/Projects/google-adwords-dumper
 source ../venv/bin/activate
-python sqlalchemy_test.py &> /tmp/gads.log
-cat /tmp/gads.log | mail -s "adwords-dump `date`" DWH_DEV@misterspex.de
+python main.py -vvvvv &> /tmp/gads.log
