@@ -59,3 +59,6 @@ you can run the program through `main.py` script. Arguments include:
 If `start-date` and `end-date` arguments are not given to the program, the program looks at the largest date for each performance report, and it downloads the data from the day after that largest date until yesterday. If the number of returned records by google differ from the number of records for the largest date in the database, the program deletes those records and tries fetching the data from google starting that date. The program does not try to check completeness of the data for dates before that date.
 
 It is recommended to run the program leaving `start-date` and `end-date` empty. The program does not try to delete existing records in the database for given dates and it may cause duplicate records. You need to handle it manually if you intend to re-fetch data for certain dates.
+
+## Contact/Questions
+Please open an issue [here](https://github.com/adrinjalali/google-adwords-dumper/issues) for any questions or bugs you find, inccluding questions on documentation and usage of the program.
